@@ -8,8 +8,7 @@ import requests
 pageurl = 'https:github.com'
 #pageurl = input("podaj adres strony")
 #date = input("podaj date")
-#zmiana
-date = 20180101
+date = 20150101
 url ="http://archive.org/wayback/available?url="+pageurl+"&timestamp="+str(date)
 response = requests.get(url)
 d = response.json()
